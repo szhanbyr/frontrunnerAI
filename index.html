@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontRunner AI - Next Gen Trading</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script>
+        function copyCA() {
+            navigator.clipboard.writeText('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D');
+            const button = document.getElementById('copyButton');
+            button.textContent = 'Copied! ✓';
+            setTimeout(() => {
+                button.textContent = 'Copy CA';
+            }, 2000);
+        }
+    </script>
     <style>
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
@@ -67,6 +77,22 @@
                     Our AI doesn't just predict markets - it defines them. 🎯
                 </p>
 
+                <!-- Contract Address Section -->
+                <div class="glass-effect p-4 rounded-2xl max-w-2xl mx-auto mb-12">
+                    <div class="text-xl text-purple-200 mb-4">🔗 Contract Address</div>
+                    <div class="flex items-center justify-center gap-4">
+                        <div class="glass-effect px-6 py-3 rounded-xl text-purple-200 font-mono text-sm md:text-base overflow-x-auto">
+                            0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
+                        </div>
+                        <button 
+                            id="copyButton"
+                            onclick="copyCA()"
+                            class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-xl hover:opacity-90 transition-opacity whitespace-nowrap">
+                            Copy CA
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Stats -->
                 <div class="flex justify-center gap-8 mb-12">
                     <div class="glass-effect p-4 rounded-xl">
@@ -81,14 +107,6 @@
                         <div class="text-3xl font-bold gradient-text">24/7</div>
                         <div class="text-sm text-purple-200">Market Analysis</div>
                     </div>
-                </div>
-
-                <!-- Email signup form -->
-                <div class="glass-effect p-2 rounded-full max-w-xl mx-auto flex mb-12">
-                    <input type="email" placeholder="📧 Drop your email for VIP early access" class="bg-transparent flex-1 px-6 py-3 outline-none placeholder-purple-300">
-                    <button class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity">
-                        🎉 Join the Revolution
-                    </button>
                 </div>
 
                 <!-- Features preview -->
@@ -107,25 +125,6 @@
                         <div class="text-4xl mb-4">💎</div>
                         <h3 class="text-xl font-bold mb-2 gradient-text">Diamond Hands</h3>
                         <p class="text-purple-200">Smart risk management for maximum gains</p>
-                    </div>
-                </div>
-
-                <!-- Coming soon counter -->
-                <div class="mt-20">
-                    <div class="text-xl text-purple-300 mb-4">🔥 LAUNCHING IN</div>
-                    <div class="flex justify-center gap-8">
-                        <div class="glass-effect p-6 rounded-2xl">
-                            <div class="text-3xl font-bold gradient-text">14</div>
-                            <div class="text-sm text-purple-200">Days</div>
-                        </div>
-                        <div class="glass-effect p-6 rounded-2xl">
-                            <div class="text-3xl font-bold gradient-text">22</div>
-                            <div class="text-sm text-purple-200">Hours</div>
-                        </div>
-                        <div class="glass-effect p-6 rounded-2xl">
-                            <div class="text-3xl font-bold gradient-text">45</div>
-                            <div class="text-sm text-purple-200">Minutes</div>
-                        </div>
                     </div>
                 </div>
 
