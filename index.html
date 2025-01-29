@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontRunner AI - Next Gen Trading</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #A855F7 0%, #6366F1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .purple-glow {
+            text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        .glass-effect {
+            background: rgba(168, 85, 247, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(168, 85, 247, 0.2);
+        }
+        .sparkle {
+            position: relative;
+        }
+        .sparkle::after {
+            content: '✨';
+            position: absolute;
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 min-h-screen text-white">
+    <div class="relative overflow-hidden">
+        <!-- Background elements -->
+        <div class="absolute top-0 left-0 w-full h-full">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-purple-500 rounded-full filter blur-[100px] opacity-30"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-indigo-500 rounded-full filter blur-[100px] opacity-30"></div>
+        </div>
+
+        <!-- Main content -->
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <nav class="flex justify-between items-center mb-20">
+                <div class="text-2xl font-bold gradient-text">✨ FrontRunner</div>
+                <div class="glass-effect px-6 py-2 rounded-full">
+                    🤖 Powered by DeepSeek AI
+                </div>
+            </nav>
+
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-4 text-xl">🚀 The Future is Here</div>
+                <h1 class="text-6xl md:text-7xl font-bold mb-8 gradient-text purple-glow">
+                    Trade Like a Pro with AI Magic ✨
+                </h1>
+                <p class="text-xl md:text-2xl text-purple-200 mb-12">
+                    Join the elite traders who are already 10 steps ahead. 
+                    Our AI doesn't just predict markets - it defines them. 🎯
+                </p>
+
+                <!-- Stats -->
+                <div class="flex justify-center gap-8 mb-12">
+                    <div class="glass-effect p-4 rounded-xl">
+                        <div class="text-3xl font-bold gradient-text">98%</div>
+                        <div class="text-sm text-purple-200">Accuracy Rate</div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-xl">
+                        <div class="text-3xl font-bold gradient-text">0.1ms</div>
+                        <div class="text-sm text-purple-200">Response Time</div>
+                    </div>
+                    <div class="glass-effect p-4 rounded-xl">
+                        <div class="text-3xl font-bold gradient-text">24/7</div>
+                        <div class="text-sm text-purple-200">Market Analysis</div>
+                    </div>
+                </div>
+
+                <!-- Email signup form -->
+                <div class="glass-effect p-2 rounded-full max-w-xl mx-auto flex mb-12">
+                    <input type="email" placeholder="📧 Drop your email for VIP early access" class="bg-transparent flex-1 px-6 py-3 outline-none placeholder-purple-300">
+                    <button class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity">
+                        🎉 Join the Revolution
+                    </button>
+                </div>
+
+                <!-- Features preview -->
+                <div class="grid md:grid-cols-3 gap-8 mt-20">
+                    <div class="glass-effect p-8 rounded-2xl hover:scale-105 transition-transform">
+                        <div class="text-4xl mb-4">🎯</div>
+                        <h3 class="text-xl font-bold mb-2 gradient-text">Smart Predictions</h3>
+                        <p class="text-purple-200">Our AI sees market patterns others can't even imagine</p>
+                    </div>
+                    <div class="glass-effect p-8 rounded-2xl hover:scale-105 transition-transform">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold mb-2 gradient-text">Lightning Fast</h3>
+                        <p class="text-purple-200">Execute trades faster than human thought</p>
+                    </div>
+                    <div class="glass-effect p-8 rounded-2xl hover:scale-105 transition-transform">
+                        <div class="text-4xl mb-4">💎</div>
+                        <h3 class="text-xl font-bold mb-2 gradient-text">Diamond Hands</h3>
+                        <p class="text-purple-200">Smart risk management for maximum gains</p>
+                    </div>
+                </div>
+
+                <!-- Coming soon counter -->
+                <div class="mt-20">
+                    <div class="text-xl text-purple-300 mb-4">🔥 LAUNCHING IN</div>
+                    <div class="flex justify-center gap-8">
+                        <div class="glass-effect p-6 rounded-2xl">
+                            <div class="text-3xl font-bold gradient-text">14</div>
+                            <div class="text-sm text-purple-200">Days</div>
+                        </div>
+                        <div class="glass-effect p-6 rounded-2xl">
+                            <div class="text-3xl font-bold gradient-text">22</div>
+                            <div class="text-sm text-purple-200">Hours</div>
+                        </div>
+                        <div class="glass-effect p-6 rounded-2xl">
+                            <div class="text-3xl font-bold gradient-text">45</div>
+                            <div class="text-sm text-purple-200">Minutes</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social proof -->
+                <div class="mt-20 glass-effect p-8 rounded-2xl">
+                    <div class="text-2xl mb-4">⭐️⭐️⭐️⭐️⭐️</div>
+                    <p class="text-xl text-purple-200 italic">"FrontRunner changed the game. It's like having a time machine for trading!"</p>
+                    <div class="mt-4 text-purple-300">- Crypto Whale 🐋</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="fixed bottom-0 w-full py-6 text-center text-purple-200 bg-gray-900 bg-opacity-80 backdrop-blur-md">
+        <div class="container mx-auto">
+            ✨ © 2025 FrontRunner AI. Making millionaires daily. 💎
+        </div>
+    </footer>
+</body>
+</html>
